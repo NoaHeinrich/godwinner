@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Godwinner",
+  "description": "Detect inappropriate comparisons to Hitler",
+  "version": "0.1",
+
+  "browser_action": {
+   "default_icon": "Godwin.png",
+   "default_popup": "popup.html"
+   },
+
+  "content_scripts": [ {
+    "js": [ "https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js", "background.js" ],
+    "matches": [ "http://*/*", "https://*/*"]
+  }],
+
+  "permissions": [
+    "activeTab"
+   ]
+}
