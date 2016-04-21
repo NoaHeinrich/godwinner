@@ -10,6 +10,14 @@
    "default_popup": "popup.html"
    },
 
+  "content_scripts": [
+  {
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": ["jquery-2.2.3.min.js", "content.js"]
+  }
+  ],
 
   "permissions": [
     "activeTab"
