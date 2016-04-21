@@ -10,10 +10,14 @@
    "default_popup": "popup.html"
    },
 
-  "content_scripts": [ {
-    "js": [ "https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js", "background.js" ],
-    "matches": [ "http://*/*", "https://*/*"]
-  }],
+  "content_scripts": [
+  {
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": ["jquery-2.2.3.min.js", "content.js"]
+  }
+  ],
 
   "permissions": [
     "activeTab"
