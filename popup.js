@@ -1,5 +1,3 @@
 document.addEventListener('DOMContentLoaded', function(){
-  console.log("Hi")
-  chrome.tabs.getSelected(null, function(tab){
-  })
-})`
+  chrome.runtime.onMessage.addListener(function)
+})
